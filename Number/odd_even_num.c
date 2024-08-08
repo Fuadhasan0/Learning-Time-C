@@ -1,29 +1,24 @@
 #include<stdio.h>
 
-int numPrint(int Enter);
+int main(){
+       
+       int num, T, i=0;
 
-int main()
-{
-       int Enter;
-       printf("Enter a number : ");
-       scanf("%d", &Enter);
+       printf("Who many time you run this code?\n~ ");
+       scanf("%d", &T);
 
-       numPrint(Enter);
+       while(i<T){
+              i++;
+              printf("Enter a number\n~ ");
+              scanf("%d", &num);
 
-       return 0; 
+              if(num % 2 == 0){
+                     printf("%d is a even.\n", num);
+              }
+              else{
+                     printf("%d is a odd.\n", num);
+              }
 }
 
-int numPrint(Enter){
-
-       int i = 0;
-       while(i < Enter){
-              i++;
-              if(i % 2 == 0){
-                     continue;
-              }
-
-              printf("Result is : %d\n", i);
-              
-       }
-       
+       return 0;
 }
